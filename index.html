@@ -1,36 +1,55 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vision</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+   
     <div id="body">
+        
     <div class="main">
+        
         <!-- <div id="weather"> -->
             <div id="weather">
+             
                 <P id="text">WEATHER</P>
                 <p id="vision">VISION</p>
                 <p>____________________</p>
+             
+               
                 <h3 id="h3">Welcome to <br>the Kingdom of <br><span> Saudi Arabia</span></h3>
                 <h1 id="h1">tempreture</h1>
                 <h3 id="temp"></h3>
                 <h1 id="h11">humidity</h1>
                 <h3 id="humidity"></h3>
                 <p></p>
-                
             </div>
             <div class="card">
-            
                 <!-- <img class="card2" src="https://i.pinimg.com/236x/e5/4f/fb/e54ffb27cb3c42172815e4c0adbadae8.jpg"> -->
-                <img class="card1" src="https://i.pinimg.com/236x/96/ee/af/96eeafe881d447a6becb04cfb0f47b5c.jpg" data-test="Riyadh" onclick="card1()">
+                <img class="card1" src="https://pbs.twimg.com/media/FBj8FkKXoAIbcvK?format=jpg&name=medium" data-test="Riyadh" onclick="card1()">
                 <img class="card2" src="https://i.pinimg.com/236x/d9/8c/79/d98c7945c4cc92263fc60080e6c74e89.jpg" data-test="Abha" onclick="card2()">
-                <img id="card3" src="https://i.pinimg.com/564x/ce/1d/97/ce1d97b09fbf515228c2537885ed5007.jpg" data-test="Jeddah" onclick="card3()">
+                <img id="card3"    src="https://i.pinimg.com/236x/98/18/f9/9818f93d6633ab83e75b6637eaa68a25.jpg" data-test="Jeddah" onclick="card3()">
+              
             </div>
+            
+        
+        <div class="input">
+            <input type="text" class="inputValue" placeholder="Find the city temperature">
+            <input type="submit" class="button" value="Search">
+            <div class="display">
+                <p class="name1"></p>
+                <p class="desc"></p>
+                <p class="temp1"></p>
+            </div>
+        </div>
+         
+    </div>
+
         <!-- </div> -->
         
     </div>
@@ -106,7 +125,7 @@
         <h2 class="title-text" style="font-size:22">The Most Famous Food In The Kingdom</h2>
         <img class="title-img" src="photo1634611652.jpeg" >
         </div>
-    <div class="section-three">
+     <div class="section-three">
                 
         
            <div> 
@@ -126,9 +145,61 @@
             <div>
             <img class="img-3" src="https://i.pinimg.com/564x/b0/09/22/b00922896dcb39d4d7db865e2bb89097.jpg">
             <p>كليجا</p>
-        </div>
+        </div> 
   
     </div>
+
+     <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Post Slider -->
+    <div class="post-slider">
+     
+      <i class="fas fa-chevron-left prev"></i>
+      <i class="fas fa-chevron-right next"></i>
+
+      <div class="post-wrapper">
+
+        <div class="post">
+          <img src="https://i.pinimg.com/236x/6e/ff/ff/6effffab81a3d18085bb8b1d88531e76.jpg" alt="" class="slider-image">
+          <div class="post-info">
+            <h4>Kabsa is the most famous food in the Najd region, which is rice with meat or chicken</h4>
+            <i class="far fa-user"> كبسة</i>
+            &nbsp;
+            <i class="far fa-calendar"> </i>
+          </div>
+        </div>
+        <div class="post">
+          <img src="https://i.pinimg.com/564x/64/9a/a7/649aa716096795cc66a69acff322cb43.jpg" alt="" class="slider-image">
+          <div class="post-info">
+            <h4>Al Arekah is the most famous food in the south. It consists of flour, dates and honey</h4>
+            <i class="far fa-user"> عريكه</i>
+            &nbsp;
+            <i class="far fa-calendar"></i>
+          </div>
+        </div><div class="post">
+          <img src="https://i.pinimg.com/236x/00/76/b9/0076b95cd021ab61b9dc37c4400eff62.jpg" alt="" class="slider-image">
+          <div class="post-info">
+            <h4>Marqoq is one of the most famous Saudi dishes, consisting of flour and meat</h4>
+            <i class="far fa-user"> مرقوق</i>
+            &nbsp;
+            <i class="far fa-calendar"> </i>
+          </div>
+        </div><div class="post">
+          <img src="https://i.pinimg.com/564x/b0/09/22/b00922896dcb39d4d7db865e2bb89097.jpg" alt="" class="slider-image">
+          <div class="post-info">
+            <h4>Kleija is the most famous type of sweets in Saudi Arabia, especially Qassim</h4>
+            <i class="far fa-user"> كليجا</i>
+            &nbsp;
+            <i class="far fa-calendar"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Slick Carousel -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
