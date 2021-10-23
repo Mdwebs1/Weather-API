@@ -103,6 +103,11 @@ function weather(city){
   var name1 =document.querySelector(".name1");
   var temp1=document.querySelector(".temp1");
   var decs=document.querySelector(".desc");
+  document.querySelector('table').style.display="block";
+ 
+ 
+
+
   fetch("https://community-open-weather-map.p.rapidapi.com/climate/month?q="+`${inputValue.value}`,{
     "method": "GET",
     "headers": {
@@ -110,15 +115,16 @@ function weather(city){
       "x-rapidapi-key": "de3da41503msh12b52ab0ede66bfp1c6e13jsn8c720920ffb5" 
     }
   })
-  
+ 
+ 
     .then(response => response.json())
     .then(data =>{
       console.log(data);
       const d = new Date();
       let thisDay= d.getDate();
       // var nameValue = "Welcome to "+data.city.name;
-      var tempValue = "The Temperature Is "+data.list[thisDay-1].temp.average;
-      var decsValue = "The City is "+data.city.name +", "+"Located In " +data.city.country ;
+      var tempValue = data.list[thisDay-1].temp.average;
+      var decsValue = data.city.name +" , "+"Located In " +data.city.country ;
       console.log(decsValue);
      
      
@@ -128,9 +134,30 @@ function weather(city){
     })
 
   .catch(err =>alert("Wronng City Name"))
+  
+  
  })
 
+ function deleteRow(tableID) {
+  try {
+    var table = document.getElementById("tableofwaether");
+    var rowCount = table.rows.length;
 
+    for (var i = 0; i < rowCount; i++) {
+      var row = table.rows[i];
+      var chkbox = row.cells[i+1].childNodes[0];
+      console.log(chkbox)
+      if (null != chkbox && true == chkbox.checked) {
+        console.log("delte")
+        table.deleteRow(i);
+        rowCount--;
+        i--;
+      }
+    }
+  } catch (e) {
+    alert(e);
+  }
+}
 
 $(".post-wrapper").slick({
   slidesToShow: 3,

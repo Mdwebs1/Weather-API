@@ -39,12 +39,25 @@
         
         <div class="input">
             <input type="text" class="inputValue" placeholder="Find the city temperature">
-            <input type="submit" class="button" value="Search">
-            <div class="display">
+            <input type="submit" class="button" value="Search" >
+            <table id="tableofwaether">
+              <tr class="display">
+                
+                <th>Name</th>
+                <th>Temperature</th>
+                <th type="button" id="subtract" value="Delete Row" onclick="deleteRow('tableofwaether')" >Delete</th>
+                
+              </tr>
+              <td class="desc"></td>
+              <td class="temp1"></td>
+              <td><input type="checkbox" name="chk" /></td>
+            </table>
+           
+            <!-- <div class="display">
                 <p class="name1"></p>
                 <p class="desc"></p>
                 <p class="temp1"></p>
-            </div>
+            </div> -->
         </div>
          
     </div>

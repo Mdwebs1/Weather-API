@@ -13,7 +13,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
   
 }
@@ -27,7 +27,7 @@ body{
 }
 input[type="text"]{
   height: 50px;
-  width: 500px;background: #e7e7e7;
+  width: 500px;
   font-size: "Nunito",sans-serif;
   font-weight:bold;
   font-size: 20px;
@@ -50,12 +50,62 @@ input[type="submit"]{
 }
 .display{
   text-align: center;
+  background-color: black;
+  border-collapse: separate;
+  border-spacing: 0px 3px;
+  text-transform: uppercase;
+  /* border-radius:7px;
+  width: 50%;
+  box-shadow: inset 0 0 100vw 100vw rgba(0, 0, 0, 0.3),
+  0 16px 8px -8px rgba(0,0,0,0.4);  */
 }
+
+
+table{
+  margin-top:3px;
+  display:none;
+  border: 3px solid #f1edf0;
+  color: #FFF;
+  font-weight: 700;
+  background:white;
+
+ 
+  white-space: nowrap;
+  }
+  td,th{
+  border: 3px  ;
+  width: 100%;
+  height: 40px;
+  }
+
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  
+ .close{
+   width:20px;
+   cursor: pointer;
+  
+ }
+ #subtract{
+   cursor: pointer;
+ }
+  
+  @media screen and (max-width: 567px) {
+  
+      .winner__table{
+      font-size: 12px;
+      }
+      .coin {
+      width:15%;
+      margin-left:2px;
+      }
+  }
 .desc,.temp1{
+  
   font-size: "Nunito",sans-serif;
-  font-weight:bold;
   font-size: 20px;
-  color: white;
+  color: rgb(20, 19, 19);
   margin-bottom: 20px;
   
 }
